@@ -1,5 +1,5 @@
-[!IMPORTANT]
-This website is currently under construction, and is being completed for extra credit!
+>[!IMPORTANT]
+>This website is currently under construction, and is being completed for extra credit!
 
 # CIS 641, My Extra Credit Website :shipit:
 

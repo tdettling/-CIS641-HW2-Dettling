@@ -3,7 +3,7 @@
 <head>
   <style>
     body {
-      background-color: #228B22; /* Forest Green */
+      background-color: #D3D3D3; /* Forest Green */
       color: white; /* Optional: Set text color for readability */
     }
     h1, h2, h3, p {
@@ -30,3 +30,6 @@ fixme
 
 ## Current Estimated Progress. 
 not sure. 
+
+</body>
+</html>

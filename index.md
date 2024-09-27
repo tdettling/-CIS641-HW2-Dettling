@@ -8,13 +8,9 @@
   }
 </style>
 
->[!IMPORTANT]
->This website is currently under construction, and is being completed for extra credit!
 
 # CIS 641, My Extra Credit Website :shipit:
 
-## Disclaimer
-This is INDEED my very first page. 
 
 ## Zelda TOTK Progress and Udates
 ### Overview
@@ -25,3 +21,6 @@ fixme
 
 ## Current Estimated Progress. 
 not sure. 
+
+## Sources
+In the file, I used a [Syling Website](https://www.sitepoint.com/styling-the-html-and-body-elements/) for changig the background colors, I have never done it before. 

@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: #228B22; /* Forest Green */
+      color: white; /* Optional: Set text color for readability */
+    }
+    h1, h2, h3, p {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
 >[!IMPORTANT]
 >This website is currently under construction, and is being completed for extra credit!
 

@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
-    body {
-      background-color: #D3D3D3; /* Forest Green */
-      color: white; /* Optional: Set text color for readability */
-    }
-    h1, h2, h3, p {
-      font-family: Arial, sans-serif;
-    }
-  </style>
-</head>
-<body>
+<style>
+  body {
+    background-color: #D3D3D3; /* Light Gray */
+    color: black;
+  }
+  h1, h2, h3, p {
+    font-family: Arial, sans-serif;
+  }
+</style>
 
 >[!IMPORTANT]
 >This website is currently under construction, and is being completed for extra credit!
@@ -30,6 +25,3 @@ fixme
 
 ## Current Estimated Progress. 
 not sure. 
-
-</body>
-</html>

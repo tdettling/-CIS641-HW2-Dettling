@@ -1,37 +1,46 @@
+/* General styling */
 body {
     margin: 0;
-    background-color: rgb(122, 71, 71);
+    background-color: #fff; /* Use hex for consistency */
     font-size: 100%;
 }
 
+/* Navigation bar styling */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  
-  li {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
+    font-family: Arial, sans-serif; /* Ensures a clean, readable font */
+}
+
+li a:hover:not(.active) {
     background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-  
+}
+
+/* Active link styling */
+.active {
+    background-color: #520a81;
+}
+
+/* Button styling */
 .button {
     border: none;
     color: white;
@@ -43,6 +52,7 @@ ul {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
 .button1 {
@@ -56,11 +66,18 @@ ul {
     color: white;
 }
 
+/* Heading and paragraph styling */
 h1 {
-    color: rgb(0, 0, 0);
+    color: #000; /* Use hex for consistency */
+    font-family: Arial, sans-serif;
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: #000;
+    font-family: Arial, sans-serif;
 }
-body {margin: 0;}
+
+/* Ensure body margin is 0 */
+body {
+    margin: 0;
+}

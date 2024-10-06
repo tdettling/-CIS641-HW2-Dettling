@@ -6,7 +6,7 @@ body {
 }
 
 /* Navigation bar styling */
-ul {
+.navbar { /* Target navbar specifically */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,11 +18,11 @@ ul {
     z-index: 1000; /* Ensures the navbar stays on top */
 }
 
-li {
+.navbar li {
     float: left;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -31,13 +31,24 @@ li a {
     font-family: Arial, sans-serif; /* Ensures a clean, readable font */
 }
 
-li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
     background-color: #111;
 }
 
 /* Active link styling */
 .active {
     background-color: #520a81;
+}
+
+/* Content list styling */
+.content-list { /* Target content lists specifically */
+    list-style-type: disc; /* Default bullet style */
+    margin-left: 20px; /* Adjust left margin for better spacing */
+    padding-left: 0; /* Remove padding if necessary */
+}
+
+.content-list li {
+    margin-bottom: 5px; /* Add space between list items */
 }
 
 /* Button styling */
@@ -97,6 +108,7 @@ body {
 
 li {
     margin-bottom: 10px; /* Add spacing between list items */
+    margin: auto;
     font-family: Arial, sans-serif; /* Use a consistent font */
     color: #000; /* Text color */
 }

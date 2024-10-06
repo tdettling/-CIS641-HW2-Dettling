@@ -112,3 +112,11 @@ li {
     font-family: Arial, sans-serif; /* Use a consistent font */
     color: #000; /* Text color */
 }
+
+.right-image {
+    float: right; /* Float the image to the right */
+    margin-left: 15px; /* Add space between the image and text */
+    max-width: 100%; /* Ensure it fits in the container */
+    height: auto; /* Maintain aspect ratio */
+}
+

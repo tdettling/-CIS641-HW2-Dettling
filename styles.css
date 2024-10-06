@@ -43,7 +43,7 @@ li a:hover:not(.active) {
 /* Button styling */
 .button {
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -80,4 +80,23 @@ p {
 /* Ensure body margin is 0 */
 body {
     margin: 0;
+}
+
+/* Content section styling - adding padding to avoid being covered by the navbar */
+.section {
+    padding-top: 60px; /* Adjust this value if your navbar height changes */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Adjusted h1 inside section to add extra spacing */
+.section h1, .section h2, .section h3, .section h4 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-family: Arial, sans-serif; /* Use a consistent font */
+    color: #000; /* Text color */
 }

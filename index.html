@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <div class="container">
+        <h2 class="title">
+          <span class="title-word title-word-1">Hi!</span>
+          <span class="title-word title-word-2">I'm</span>
+          <span class="title-word title-word-3">L</span>
+        </h2>
+      </div>
     <link rel="stylesheet" href="styles.css">
+    <!-- A fun lil font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <ul class="navbar">
-        <li><a class="active" href="#aboutme">About Me</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+    <ul class="navbar" id="navbar">
+        <li class="nav-item"><a class="active" href="#aboutme">About Me</a></li>
+        <li class="nav-item"><a href="#edu-con">Education</a></li>
+        <li class="nav-item"><a href="#work">Work Experience</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
     </ul>
 
+    
+    
     <!-- Content Sections -->
     <div id="aboutme" class="section">
         <h1>Hello!</h1>
@@ -34,12 +45,24 @@
             I’m actively seeking opportunities to grow in the field of software development and look forward to connecting with professionals in the industry.
         </p>
     </div>
+    <h1>           Education</h1>
+    <div id="edu-con" class="section">
+        <div id="edu" class="edu-item">
+            <h2>B.S. Theoretical Mathematics</h2>
+            <p>May 2023 &#8226; Grand Valley State University</p>
+        </div>
+        
+        <div id="edu-right" class="edu-item">
+            <h2>M.S. Applied Computer Science</h2>
+            <p>Expected Graduation: December 2024 &#8226; Grand Valley State University</p>
+        </div>
+    </div>
+    
 
     <div id="work" class="section">
         <h2>Work Experience</h2>
         <h3>IT Operations Clerk - Grand Valley State University</h3>
         <h4>Full-Time &#8226; June 2023 - Present &#8226; Allendale, Michigan</h4>
-        <p>Content goes here... Stay updated with my latest activities and work!</p>
         <ul class="content-list">
             <li>Design and maintain advanced Power BI dashboards for Technology Acquisitions purchasing data, 
                 integrating automated data collection and cleaning through Power Automate to ensure precise, real-time analytics.
@@ -53,15 +76,73 @@
                 facilitating smooth operations and addressing any issues promptly.
             </li>
         </ul>
+
+        <h3>Lead AV Student Technician - Grand Valley State University</h3>
+        <h4>Part-time &#8226; January 2021 - June 2023 &#8226; Allendale, Michigan</h4>
+        <ul class="content-list">
+            <li>Perform general maintenance of printers and other technology equipment.
+            </li>
+            <li>Provide IT support to students and faculty through phone, email, and in-person interactions.
+            </li>
+            <li>Troubleshoot and resolve technology issues related to connectivity, power, and physical damage or blockages.
+            </li>
+            <li>Deliver high-quality customer service to ensure user satisfaction.
+            </li>
+            <li>Maintain the organization and functionality of the assigned work area.
+            </li>
+        </ul>
+        
+        <h3>High Performance Computing Research Intern
+            - Oak Ridge National Laboratory</h3>
+        <h4>Internship &#8226; May - August 2022
+            &#8226; Oak Ridge, Tennessee</h4>
+        <ul class="content-list">
+            <li>Partnered in evaluating the performance and productivity of C, C++, Java, and Python through matrix multiplication, 
+                contributing to the development of strategic insights and recommendations.
+            </li>
+            <li>Conducted in-depth analyses of runtime and memory usage trends on high-performance systems, 
+                supporting the design and optimization of efficient software solutions.
+            </li>
+            <li>Published research findings and presented at conferences and research events, 
+                showcasing advancements in high-performance computing and contributing to the academic and professional community.
+            </li>
+        </ul>
+
+        <h3>Software Engineer Intern - Auto-Owners Insurance</h3>
+        <h4>Internship &#8226; May to August 2021
+            &#8226; Lansing, Michigan</h4>
+        <ul class="content-list">
+            <li>Gain proficiency in the syntax and applications of COBOL.
+            </li>
+            <li>Write organized, clean, and professional code.
+            </li>
+            <li>Develop meaningful projects focused on life systems.
+            </li>
+            <li>Conduct thorough code reviews to ensure quality and adherence to standards.
+            </li>
+            <li>Perform general clerical tasks such as answering phones and scheduling meetings.
+            </li>
+        </ul>
+
+        <h3>Computer Science Tutoring Assistant - Grand Valley State University</h3>
+        <h4>Part-time &#8226; August - December 2020
+            &#8226; Allendale, Michigan</h4>
+        <ul class="content-list">
+            <li>Educate students on foundational programming skills in Java and Python.
+            </li>
+            <li>Provide academic tutoring and support to help students excel in their coursework.
+            </li>
+            <li>Develop and deliver solutions to common Java programming challenges.
+            </li>
+            <li>Offer general IT support to students and faculty as needed.
+            </li>
+        </ul>
+
     </div>
 
-    <div id="contact" class="section">
-        <h2>Contact Section</h2>
-        <p>If you'd like to reach out, feel free to contact me through this section.</p>
-        <p>My first paragraph.</p>
-        <a href="https://www.w3schools.com/html/html_links.asp">Visit W3Schools.com!</a>
-        <a href="https://css-tricks.com/snippets/html/responsive-meta-tag/">Visit css-tricks.com!</a>
-        <a href="https://forum.freecodecamp.org/t/nav-bar-with-link-to-section-in-same-page/501465">Visit Free Code Camp!</a>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+
     </div>
 
     <div id="about" class="section">
@@ -72,7 +153,14 @@
         </a>
         <p class="project-tile"></p>
         <a href="https://tdettling.github.io/-CIS641-HW2-Dettling/">Project 1</a>
+
+        <p> some stuff <span class="fancy">background</span></p>
     </div>
 
+    <h1> Sources</h1>
+    <a href="https://www.w3schools.com/html/html_links.asp">Visit W3Schools.com!</a>
+    <a href="https://css-tricks.com/snippets/html/responsive-meta-tag/">Visit css-tricks.com!</a>
+    <a href="https://forum.freecodecamp.org/t/nav-bar-with-link-to-section-in-same-page/501465">Visit Free Code Camp!</a>
+    <a href="https://alvarotrigo.com/blog/css-text-animations/">Visit alvarotrigo!</a>
 </body>
 </html>

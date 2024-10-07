@@ -3,10 +3,11 @@ body {
     margin: 0;
     background-color: #fff; /* Use hex for consistency */
     font-size: 100%;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Navigation bar styling */
-.navbar { /* Target navbar specifically */
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,7 +16,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensures the navbar stays on top */
+    z-index: 1000;
+}
+
+.nav-item {
+    display: inline; /* Displays items inline */
+    margin-right: 15px; /* Space between items */
 }
 
 .navbar li {
@@ -28,7 +34,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Arial, sans-serif; /* Ensures a clean, readable font */
+    font-family: 'Nunito', sans-serif;
 }
 
 .navbar li a:hover:not(.active) {
@@ -40,15 +46,16 @@ body {
     background-color: #520a81;
 }
 
+
 /* Content list styling */
-.content-list { /* Target content lists specifically */
-    list-style-type: disc; /* Default bullet style */
-    margin-left: 20px; /* Adjust left margin for better spacing */
-    padding-left: 0; /* Remove padding if necessary */
+.content-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
 }
 
 .content-list li {
-    margin-bottom: 5px; /* Add space between list items */
+    margin-bottom: 5px;
 }
 
 /* Button styling */
@@ -63,7 +70,7 @@ body {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .button1 {
@@ -79,44 +86,125 @@ body {
 
 /* Heading and paragraph styling */
 h1 {
-    color: #000; /* Use hex for consistency */
-    font-family: Arial, sans-serif;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
 }
 
 p {
     color: #000;
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-/* Ensure body margin is 0 */
-body {
-    margin: 0;
-}
 
-/* Content section styling - adding padding to avoid being covered by the navbar */
+/* Content section styling */
 .section {
-    padding-top: 60px; /* Adjust this value if your navbar height changes */
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-/* Adjusted h1 inside section to add extra spacing */
 .section h1, .section h2, .section h3, .section h4 {
-    margin-top: 0;
-    padding-top: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
 }
 
 li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px;
     margin: auto;
-    font-family: Arial, sans-serif; /* Use a consistent font */
-    color: #000; /* Text color */
+    font-family: 'Nunito', sans-serif;
+    color: #000;
 }
 
 .right-image {
-    float: right; /* Float the image to the right */
-    margin-left: 15px; /* Add space between the image and text */
-    max-width: 200%; /* Ensure it fits in the container */
-    height: auto; /* Maintain aspect ratio */
+    float: right;
+    margin-left: 15px;
+    max-width: 200%;
+    height: auto;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 30vh
+  }
+  
+  .title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+    text-transform: uppercase;
+  }
+
+  .fancy {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+
+  .subtitleP {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+  }
+
+  #edu-con {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between items */
+}
+
+.edu-item {
+    flex: 1; /* Each item takes equal space */
+    margin: 10px; /* Add some margin for spacing */
+    padding: 15px; /* Padding inside each item */
+    border: 1px solid #ccc; /* Optional: add a border for visual separation */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #db91ee; /* Optional: background color */
 }
 
